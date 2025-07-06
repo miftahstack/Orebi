@@ -1,4 +1,5 @@
 import Ads from "../layouts/Ads";
+import AdsTwo from "../layouts/AdsTwo";
 import Hero from "../layouts/Hero";
 import Info from "../layouts/Info";
 import NewArrival from "../layouts/NewArrival";
@@ -11,6 +12,7 @@ const Home = () => {
       <Info />
       <Ads />
       <NewArrival />
+      <AdsTwo/>
       <SpecialOffers />
     </>
   );

@@ -4,23 +4,25 @@ import Img from "../Img";
 // Own Components
 
 // Images
-import hero from "../../assets/ hero.png";
+import POY from "../../assets/adsTwo.jpg";
 import { Link } from "react-router-dom";
 // Images
-
-
-const Hero = () => {
+const AdsTwo = () => {
   return (
     <>
-      <section className="bg-bgColor m-auto">
+      <section >
+        <Container className={
+         "py-20"
+        }>
           <Link to={"/shop"}>
-            <div >
-              <Img src={hero} alt={"hero.png"} />
+            <div>
+              <Img src={POY} alt={"phone-of-the-year.png"} />
             </div>
           </Link>
+        </Container>
       </section>
     </>
   );
 };
 
-export default Hero;
+export default AdsTwo;

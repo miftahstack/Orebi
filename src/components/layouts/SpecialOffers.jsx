@@ -17,7 +17,7 @@ const SpecialOffers = () => {
   return (
     <>
       <section>
-        <Container className={""}>
+        <Container className={"py-20"}>
           <h3 className="font-bold text-[38px] ">Special Offers</h3>
           <Flex className={"pt-20 gap-3 justify-between flex-wrap"}>
             <Link to={"/shop"}>
