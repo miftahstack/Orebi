@@ -1,6 +1,6 @@
-import React from "react";
+// Own Components
 import Img from "../Img";
-import CLock from "../../assets/clockOne.png";
+// Own Components
 
 const Product = (props) => {
   return (

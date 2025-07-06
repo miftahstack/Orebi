@@ -2,6 +2,7 @@ import Ads from "../layouts/Ads";
 import Hero from "../layouts/Hero";
 import Info from "../layouts/Info";
 import NewArrival from "../layouts/NewArrival";
+import SpecialOffers from "../layouts/SpecialOffers";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Info />
       <Ads />
       <NewArrival />
+      <SpecialOffers />
     </>
   );
 };
