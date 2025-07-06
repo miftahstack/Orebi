@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 // Own Components
 
 // Images
-import Bottle from "../../assets/bottle.png";
-import Bag from "../../assets/bag.png";
-import BagTwo from "../../assets/bagTwo.png";
-import HamalDista from "../../assets/hamal-dista.png";
+import Cap from "../../assets/cap.png";
+import Table from "../../assets/table.png";
+import Headphone from "../../assets/headphone.png";
+import Sunglass from "../../assets/sungalss.png";
 // Images
 
 // Own Components
@@ -21,16 +21,16 @@ const SpecialOffers = () => {
           <h3 className="font-bold text-[38px] ">Special Offers</h3>
           <Flex className={"pt-20 gap-3 justify-between flex-wrap"}>
             <Link to={"/shop"}>
-              <Product imgsrc={Bottle} imgalt={"clock.png"} badgetxt={"New"} />
+              <Product imgsrc={Cap} imgalt={"clock.png"} badgetxt={"New"} />
             </Link>
             <Link to={"/shop"}>
-              <Product imgsrc={Bag} imgalt={"watch.png"} badgetxt={"New"} />
+              <Product imgsrc={Table} imgalt={"watch.png"} badgetxt={"New"} />
             </Link>
             <Link to={"/shop"}>
-              <Product imgsrc={HamalDista} imgalt={"stuff.png"} badgetxt={"New"} />
+              <Product imgsrc={Headphone} imgalt={"stuff.png"} badgetxt={"New"} />
             </Link>
             <Link to={"/shop"}>
-              <Product imgsrc={BagTwo} imgalt={"basket.png"} badgetxt={"New"} />{" "}
+              <Product imgsrc={Sunglass} imgalt={"basket.png"} badgetxt={"New"} />{" "}
             </Link>
           </Flex>
         </Container>
