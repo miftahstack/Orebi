@@ -15,7 +15,6 @@ import { FaUserAlt, FaSearch } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 // React Icon
-
 const Header = () => {
   return (
     <>
@@ -73,9 +72,11 @@ const Header = () => {
                 <FaSearch className="right-5 top-1/2 -translate-y-1/2 absolute" />
               </div>
               <div className="flex gap-x-4">
+
                 <div className="flex">
                   <FaUserAlt />
                   <MdOutlineArrowDropDown />
+
                 </div>
                 <FaCartShopping />
               </div>
@@ -86,5 +87,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

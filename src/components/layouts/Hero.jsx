@@ -17,13 +17,11 @@ const Hero = () => {
   return (
     <>
       <section className="bg-bgColor m-auto">
-        
           <Link to={"/shop"}>
             <div >
               <Img src={hero} alt={"hero.png"} />
             </div>
           </Link>
-
       </section>
     </>
   );

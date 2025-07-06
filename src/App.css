@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
   --color-blackColor: #262626;
   --color-bgColor: #F5F5F3;
   --color-textColor:#767676;
   --color-bannerColor:#D8D8D8;
+  --color-texProductColor:#262626;
   
 }
