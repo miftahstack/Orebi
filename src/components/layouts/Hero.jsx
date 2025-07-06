@@ -1,7 +1,7 @@
 // Own Components
-import Flex from "../Flex";
 import Container from "../Container";
 import Img from "../Img";
+import { PiNumberTwoBold } from "react-icons/pi";
 // Own Components
 
 // Images
@@ -16,10 +16,14 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
-      <section>
-         <Link to={"/shop"}>
-            <Img src={hero} alt={"hero.png"} />
-         </Link>
+      <section className="bg-bgColor m-auto">
+        
+          <Link to={"/shop"}>
+            <div >
+              <Img src={hero} alt={"hero.png"} />
+            </div>
+          </Link>
+
       </section>
     </>
   );
