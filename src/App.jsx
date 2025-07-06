@@ -1,9 +1,18 @@
-import Home from "./components/pages/Home";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import RootLayout from "./components/layouts/RootLayout";
+import Home from "./components/pages/Home"
+
+// Main App Component
 
 function App() {
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home/>} />
+        </Route>
+      </Routes>
     </>
   );
 }

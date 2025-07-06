@@ -1,14 +1,11 @@
-import React from 'react'
-import Header from '../layouts/Header'
-import Footer from '../layouts/Footer'
+import Hero from "../layouts/Hero";
 
 const Home = () => {
   return (
     <>
-    <Header/>
-    <Footer/>
+      <Hero/>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

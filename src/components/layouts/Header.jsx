@@ -29,24 +29,28 @@ const Header = () => {
                   Home
                 </a>
               </li>
+
               <li>
                 <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                   Shop
                 </a>
               </li>
+
               <li>
                 <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                   About
                 </a>
               </li>
+
               <li>
                 <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                   Contacts
                 </a>
               </li>
+
               <li>
                 <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  Jounal
+                  Journal
                 </a>
               </li>
             </ul>
