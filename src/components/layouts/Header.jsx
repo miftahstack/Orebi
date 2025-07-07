@@ -32,34 +32,34 @@ const Header = () => {
                     Home
                   </a>
                 </li>
-              </Link>{" "}
+              </Link>
               <Link to="/shop">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     Shop
                   </a>
                 </li>
-              </Link>{" "}
-              <Link to="/">
+              </Link>
+              <Link to="/about">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     About
                   </a>
                 </li>
-              </Link>{" "}
+              </Link>
               <Link to="/">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     Contacts
                   </a>
                 </li>
-              </Link>{" "}
+              </Link>
               <Link to="/">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     Journal
                   </a>
-                </li>{" "}
+                </li>
               </Link>
             </ul>
             <div className=""></div>
