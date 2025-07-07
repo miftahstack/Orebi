@@ -4,6 +4,7 @@ import RootLayout from "./components/layouts/RootLayout";
 import Home from "./components/pages/Home"
 import Shop from "./components/pages/Shop";
 
+
 // Main App Component
 
 function App() {
