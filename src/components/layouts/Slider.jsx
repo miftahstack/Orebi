@@ -5,6 +5,7 @@ import slideOne from "../../assets/slide-one.png";
 import slideTwo from "../../assets/slide-two.png";
 import slideThree from "../../assets/slide-three.png";
 
+
 function ReactSlider() {
   var settings = {
     dots: true,
