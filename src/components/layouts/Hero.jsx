@@ -1,23 +1,21 @@
 // Own Components
-import Container from "../Container";
 import Img from "../Img";
+
+import { Link } from "react-router-dom";
 // Own Components
 
 // Images
 import hero from "../../assets/ hero.png";
-import { Link } from "react-router-dom";
+import ReactSlider from "./Slider";
 // Images
-
 
 const Hero = () => {
   return (
     <>
       <section className="bg-bgColor m-auto">
-          <Link to={"/shop"}>
-            <div >
-              <Img src={hero} alt={"hero.png"} />
-            </div>
-          </Link>
+        <Link to={"/shop"}>
+        <ReactSlider />
+        </Link>
       </section>
     </>
   );
