@@ -14,6 +14,7 @@ import bars from "../../assets/bars.svg";
 import { FaUserAlt, FaSearch } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 // React Icon
 const Header = () => {
   return (
@@ -21,37 +22,45 @@ const Header = () => {
       <section>
         <Container className={"p-6"}>
           <Flex className={"justify-between"}>
+            <Link to="/">
             <Img src={logo} alt={"logo"} />
+            </Link>
             <ul className="flex gap-x-4">
-              <li>
-                <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  Shop
-                </a>
-              </li>
-
-              <li>
-                <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  Contacts
-                </a>
-              </li>
-
-              <li>
-                <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                  Journal
-                </a>
-              </li>
+              <Link to="/">
+                <li>
+                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                    Home
+                  </a>
+                </li>
+              </Link>{" "}
+              <Link to="/shop">
+                <li>
+                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                    Shop
+                  </a>
+                </li>
+              </Link>{" "}
+              <Link to="/">
+                <li>
+                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                    About
+                  </a>
+                </li>
+              </Link>{" "}
+              <Link to="/">
+                <li>
+                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                    Contacts
+                  </a>
+                </li>
+              </Link>{" "}
+              <Link to="/">
+                <li>
+                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                    Journal
+                  </a>
+                </li>{" "}
+              </Link>
             </ul>
             <div className=""></div>
           </Flex>
@@ -72,11 +81,9 @@ const Header = () => {
                 <FaSearch className="right-5 top-1/2 -translate-y-1/2 absolute" />
               </div>
               <div className="flex gap-x-4">
-
                 <div className="flex">
                   <FaUserAlt />
                   <MdOutlineArrowDropDown />
-
                 </div>
                 <FaCartShopping />
               </div>
