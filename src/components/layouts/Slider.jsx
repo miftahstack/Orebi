@@ -8,7 +8,7 @@ import slideThree from "../../assets/slide-three.png";
 
 function ReactSlider() {
   var settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     slidesToShow: 1,
