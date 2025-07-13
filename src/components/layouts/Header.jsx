@@ -47,7 +47,7 @@ const Header = () => {
                   </a>
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="/contacts">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     Contacts

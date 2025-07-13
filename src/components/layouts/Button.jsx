@@ -1,9 +1,8 @@
-import React from "react";
 
-const Button = (props) => {
+const Button = ({txt,className}) => {
   return (
-    <button className={props.className} type="button">
-      {props.txt}
+    <button className={`bg-black px-22 cursor-pointer py-3 text-[18px] text-white ${className}`} type="button">
+      {txt}
     </button>
   );
 };
