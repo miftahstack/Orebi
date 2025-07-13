@@ -12,18 +12,18 @@ const Error = () => {
     <>
       <section>
         <Container>
-          <Heading className={`font-bold text-[56px]`} txt={`404`} as={"h3"} />
+          <Heading className={`font-bold text-[200px]`} txt={`404`} as={"h3"} />
           <Heading
             className={`text-textColor w-[640px]`}
             txt={`The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?`}
             as={"p"}
           />
-          <div className="relative">
-            <input className="" type="text" placeholder="Type to search" />
-            <FaSearch className="absolute top-0 right-0 -translate-1/2" />
+          <div className="w-[650px] relative py-10">
+            <input className="w-[650px] py-5 px-5 border-gray-200 border" type="text" placeholder="Type to search" />
+            <FaSearch className="absolute top-1/2 right-5 -translate-y-1/2" />
           </div>
 
-          <Button className={"text-red-500"} txt={"Hii, I am button"} />
+          <Button className={`bg-black text-white px-10 py-3 mb-[130px]`} txt={"Back to Home"} />
         </Container>
       </section>
     </>
