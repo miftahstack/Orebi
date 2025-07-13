@@ -54,7 +54,7 @@ const Header = () => {
                   </a>
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="*">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                     Journal
