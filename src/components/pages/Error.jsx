@@ -5,6 +5,7 @@ import Heading from "../Heading";
 // React Icons
 import { FaSearch } from "react-icons/fa";
 import Button from "../layouts/Button";
+import { Link } from "react-router-dom";
 // React Icons
 
 const Error = () => {
@@ -19,11 +20,19 @@ const Error = () => {
             as={"p"}
           />
           <div className="w-[650px] relative py-10">
-            <input className="w-[650px] py-5 px-5 border-gray-200 border" type="text" placeholder="Type to search" />
+            <input
+              className="w-[650px] py-5 px-5 border-gray-200 border"
+              type="text"
+              placeholder="Type to search"
+            />
             <FaSearch className="absolute top-1/2 right-5 -translate-y-1/2" />
           </div>
 
-          <Button className={`bg-black text-white px-10 py-3 mb-[130px]`} txt={"Back to Home"} />
+          <Link to={"/"}>
+            <Button className={`bg-black text-white px-10 py-3 mb-[130px]`} txt={"Back to Home"} />
+          </Link>
+
+          
         </Container>
       </section>
     </>
