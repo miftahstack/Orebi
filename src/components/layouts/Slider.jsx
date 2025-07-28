@@ -19,8 +19,8 @@ function ReactSlider() {
   };
   return (
     <div className="slider-container">
+
       <Slider {...settings}>
-     
           <div>
             <Img src={slideOne} alt={"hero.png"} />
           </div>
@@ -30,7 +30,6 @@ function ReactSlider() {
           <div>
             <Img src={slideThree} alt={"hero.png"} />
           </div>
-
       </Slider>
     </div>
   );
