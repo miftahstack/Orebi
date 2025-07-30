@@ -1,7 +1,7 @@
 // Own Components
 import Container from "../Container";
 import Flex from "../Flex";
-import Product from "./Product";
+import Product from "./Products";
 import { Link } from "react-router-dom";
 // Own Components
 
@@ -33,11 +33,7 @@ const NewArrival = () => {
     <>
       <section>
         <Container className={"pb-20"}>
-
-
           <h3 className="font-bold text-[38px] pb-12">New Arrivals</h3>
-
-
           <Slider {...settings}>
             <Link to={"/shop"}>
               <Product imgsrc={Clock} imgalt={"clock.png"} badgetxt={"10%"} />

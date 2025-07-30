@@ -1,7 +1,7 @@
 // Own Components
 import Container from "../Container";
 import Flex from "../Flex";
-import Product from "./Product";
+import Product from "./Products";
 import { Link } from "react-router-dom";
 // Own Components
 

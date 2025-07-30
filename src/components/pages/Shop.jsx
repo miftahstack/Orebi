@@ -22,27 +22,27 @@ const Shop = () => {
           />
           <div className="flex items-center gap-x-1 mt-2">
             <Link to={"/"}>
-              <Heading className={` text-textColor `} txt={"Home"} as={"p"} />
+              <Heading className={`text-textColor`} txt={"Home"} as={"p"} />
             </Link>
-            <span className="text-[12px]  text-textColor mt-1">
+            <span className="text-[12px] text-textColor mt-1">
               <PiGreaterThan />
             </span>
-            <Heading className={` text-textColor cursor-pointer`} txt={"Products"} as={"p"} />
+            <Heading className={`text-textColor cursor-pointer`} txt={"Products"} as={"p"} />
           </div>
         </div>
       </Container>
-    <Container>
+      <Container>
         <Heading
-        className={`text-[20px] font-bold text-texProductColor mb-3`}
-        txt={"Shop by category"}
-        as={"h2"}
-      />
-      <Category className={`text-[15px] text-textColor`} txt={"Category 1"} as={"h4"} />
-      <Category className={`text-[15px] text-textColor`} txt={"Category 2"} as={"h4"} />
-      <Category className={`text-[15px] text-textColor`} txt={"Category 3"} as={"h4"} />
-      <Category className={`text-[15px] text-textColor`} txt={"Category 4"} as={"h4"} />
-      <Category className={`text-[15px] text-textColor`} txt={"Category 5"} as={"h4"} />
-    </Container>
+          className={`text-[20px] font-bold text-texProductColor mb-3`}
+          txt={"Shop by category"}
+          as={"h2"}
+        />
+        <Category className={`text-[15px] text-textColor`} txt={"Category 1"} as={"h4"} />
+        <Category className={`text-[15px] text-textColor`} txt={"Category 2"} as={"h4"} />
+        <Category className={`text-[15px] text-textColor`} txt={"Category 3"} as={"h4"} />
+        <Category className={`text-[15px] text-textColor`} txt={"Category 4"} as={"h4"} />
+        <Category className={`text-[15px] text-textColor`} txt={"Category 5"} as={"h4"} />
+      </Container>
     </>
   );
 };
