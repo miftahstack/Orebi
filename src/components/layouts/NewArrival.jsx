@@ -40,7 +40,7 @@ const NewArrival = () => {
 
   useEffect(() => {
     async function x() {
-      let data = await axios.get('https://dummyjson.com/products?skip=30')
+      let data = await axios.get('https://dummyjson.com/products?skip=30&limit=20')
       setMyProducts(data.data.products)
     }
     x()
@@ -48,7 +48,7 @@ const NewArrival = () => {
 
   useEffect(() => {
     async function y() {
-      let data = await axios.get('https://dummyjson.com/products?limit=20&skip=20')
+      let data = await axios.get('https://dummyjson.com/products?limit=20&skip=40')
       setMyProductsList(data.data.products)
     }
     y()

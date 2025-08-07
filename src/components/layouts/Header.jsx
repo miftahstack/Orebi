@@ -3,6 +3,8 @@ import Container from "../Container";
 import Flex from "../Flex";
 import Img from "../Img";
 import Heading from "../Heading";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 // Own Components
 
 // Images
@@ -14,13 +16,12 @@ import bars from "../../assets/bars.svg";
 import { FaUserAlt, FaSearch } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { HiBars3CenterLeft } from "react-icons/hi2";
 // React Icon
 
 const Header = () => {
 
-  const [bar, setBar] = useState(false)
+  const [bar, setBar] = useState(false);
   const handleBar = () => {
     setBar(!bar)
   }
@@ -31,44 +32,53 @@ const Header = () => {
       <section>
         <div className="sm:hidden">
           <Container>
-            <button onClick={handleBar} className="px-5 pt-5">CLick</button>
-            <ul className="flex flex-col gap-y-2 py-2 p-5">
+
+            <div className={`flex items-center justify-between `}>
+              <div className="">
+                <button onClick={handleBar} className="px-5 pt-5 cursor-pointer mb-5"><HiBars3CenterLeft /></button>
+                {bar && (<ul className="flex flex-col gap-y-2 py-2 p-5">
+                  <Link to="/">
+                    <li>
+                      <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                        Home
+                      </a>
+                    </li>
+                  </Link>
+                  <Link to="/shop">
+                    <li>
+                      <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                        Shop
+                      </a>
+                    </li>
+                  </Link>
+                  <Link to="/about">
+                    <li>
+                      <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                        About
+                      </a>
+                    </li>
+                  </Link>
+                  <Link to="/contacts">
+                    <li>
+                      <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                        Contacts
+                      </a>
+                    </li>
+                  </Link>
+                  <Link to="*">
+                    <li>
+                      <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                        Journal
+                      </a>
+                    </li>
+                  </Link>
+                </ul>)}
+              </div>
               <Link to="/">
-                <li>
-                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                    Home
-                  </a>
-                </li>
+                <Img className={`mr-10`} src={logo} alt={"logo"} />
               </Link>
-              <Link to="/shop">
-                <li>
-                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                    Shop
-                  </a>
-                </li>
-              </Link>
-              <Link to="/about">
-                <li>
-                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                    About
-                  </a>
-                </li>
-              </Link>
-              <Link to="/contacts">
-                <li>
-                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                    Contacts
-                  </a>
-                </li>
-              </Link>
-              <Link to="*">
-                <li>
-                  <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
-                    Journal
-                  </a>
-                </li>
-              </Link>
-            </ul>
+              <div className=""></div>
+            </div>
           </Container>
         </div>
 
