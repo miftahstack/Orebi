@@ -15,17 +15,24 @@ import { FaUserAlt, FaSearch } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 // React Icon
+
 const Header = () => {
+
+  const [bar, setBar] = useState(false)
+  const handleBar = () => {
+    setBar(!bar)
+  }
+
+
   return (
     <>
       <section>
-        <Container className={"p-6"}>
-          <Flex className={"justify-between"}>
-            <Link to="/">
-            <Img src={logo} alt={"logo"} />
-            </Link>
-            <ul className="flex gap-x-4">
+        <div className="sm:hidden">
+          <Container>
+            <button onClick={handleBar} className="px-5 pt-5">CLick</button>
+            <ul className="flex flex-col gap-y-2 py-2 p-5">
               <Link to="/">
                 <li>
                   <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
@@ -62,9 +69,57 @@ const Header = () => {
                 </li>
               </Link>
             </ul>
-            <div className=""></div>
-          </Flex>
-        </Container>
+          </Container>
+        </div>
+
+
+        <div className="hidden lg:block">
+          <Container className={"p-6"}>
+            <Flex className={"justify-between"}>
+              <Link to="/">
+                <Img src={logo} alt={"logo"} />
+              </Link>
+              <ul className="flex gap-x-4">
+                <Link to="/">
+                  <li>
+                    <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                      Home
+                    </a>
+                  </li>
+                </Link>
+                <Link to="/shop">
+                  <li>
+                    <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                      Shop
+                    </a>
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li>
+                    <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                      About
+                    </a>
+                  </li>
+                </Link>
+                <Link to="/contacts">
+                  <li>
+                    <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                      Contacts
+                    </a>
+                  </li>
+                </Link>
+                <Link to="*">
+                  <li>
+                    <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
+                      Journal
+                    </a>
+                  </li>
+                </Link>
+              </ul>
+              <div className=""></div>
+            </Flex>
+          </Container>
+        </div>
         <div className="bg-bgColor py-5">
           <Container>
             <Flex className={"justify-between"}>

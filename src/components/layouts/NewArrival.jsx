@@ -40,7 +40,7 @@ const NewArrival = () => {
 
   useEffect(() => {
     async function x() {
-      let data = await axios.get('https://dummyjson.com/products?limit=20')
+      let data = await axios.get('https://dummyjson.com/products?skip=30')
       setMyProducts(data.data.products)
     }
     x()
@@ -87,7 +87,7 @@ const NewArrival = () => {
               </Link>
             ))}
           </Slider>
-          
+
         </Container>
       </section >
     </>
