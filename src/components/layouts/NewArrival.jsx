@@ -30,20 +30,29 @@ const NewArrival = () => {
     pauseOnHover: true,
     speed: 700,
     autoplaySpeed: 2500,
-    
+
   };
-  
+
   //SLider
 
   const [myProducts, setMyProducts] = useState([])
+  const [myProductsList, setMyProductsList] = useState([])
 
   useEffect(() => {
     async function x() {
-      let data = await axios.get('https://dummyjson.com/products')
+      let data = await axios.get('https://dummyjson.com/products?limit=20')
       setMyProducts(data.data.products)
     }
     x()
-  })
+  },[])
+
+  useEffect(() => {
+    async function y() {
+      let data = await axios.get('https://dummyjson.com/products?limit=20&skip=20')
+      setMyProductsList(data.data.products)
+    }
+    y()
+  },[])
 
   return (
     <>
@@ -54,7 +63,7 @@ const NewArrival = () => {
             {myProducts.map(items => (
               <Link key={items.id} to={"/shop"} >
                 <Product
-                  imgsrc={items.thumbnail}
+                  imgsrc={items.images}
                   imgalt={items.name}
                   badgetxt={`${items.discountPercentage}%`}
                   title={items.title}
@@ -64,10 +73,9 @@ const NewArrival = () => {
             ))}
           </Slider>
 
-
           <h3 className="font-bold pt-20 pb-12 text-[38px]">Our Bestsellers</h3>
           <Slider  {...settings}>
-            {myProducts.map(items => (
+            {myProductsList.map(items => (
               <Link key={items.id} to={"/shop"} >
                 <Product
                   imgsrc={items.thumbnail}
