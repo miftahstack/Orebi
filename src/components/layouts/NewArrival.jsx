@@ -28,8 +28,8 @@ const NewArrival = () => {
     slidesToScroll: 4,
     autoplay: true,
     pauseOnHover: true,
-    speed: 700,
-    autoplaySpeed: 2500,
+    speed: 300,
+    autoplaySpeed: 2000,
 
   };
 
