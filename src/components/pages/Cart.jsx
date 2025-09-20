@@ -70,14 +70,14 @@ const Cart = () => {
                <div className="w-8"></div>
             </div>
             <div className="p-5 flex justify-between items-center border-b border-gray-300">
-               <div className="flex-1">Product 01</div>
+               <div className="flex-1">Product 02</div>
                <div className="w-75 text-center">$37.00</div>
                <div className="w-75 text-center">01</div>
                <div className="w-75 text-center">$37.00</div>
                <div className="w-8"></div>
             </div>
             <div className="p-5 flex justify-between items-center border-b border-gray-300">
-               <div className="flex-1">Product 01</div>
+               <div className="flex-1">Product 03</div>
                <div className="w-75 text-center">$81.00</div>
                <div className="w-75 text-center">02</div>
                <div className="w-75 text-center">$162.00</div>
