@@ -29,7 +29,7 @@ const Error = () => {
           </div>
 
           <Link to={"/"}>
-            <Button className={`bg-black text-white px-10 py-3 mb-[130px]`} txt={"Back to Home"} />
+            <Button className={`bg-black text-white px-22 py-3 mb-[130px]`} txt={"Back to Home"} />
           </Link>
 
           

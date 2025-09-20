@@ -23,6 +23,7 @@ const NewArrival = () => {
   //SLider
   var settings = {
     dots: true,
+    arrows: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -40,53 +41,57 @@ const NewArrival = () => {
 
   useEffect(() => {
     async function x() {
-      let data = await axios.get('https://dummyjson.com/products?skip=30&limit=20')
+      let data = await axios.get('https://dummyjson.com/products?skip=25&limit=20')
       setMyProducts(data.data.products)
     }
     x()
-  },[])
+  }, [])
 
   useEffect(() => {
     async function y() {
-      let data = await axios.get('https://dummyjson.com/products?limit=20&skip=40')
+      let data = await axios.get('https://dummyjson.com/products?limit=20')
       setMyProductsList(data.data.products)
     }
     y()
-  },[])
+  }, [])
 
   return (
     <>
       <section>
         <Container className={"pb-20"}>
-          <h3 className="font-bold text-[38px] pb-12">New Arrivals</h3>
-          <Slider  {...settings}>
-            {myProducts.map(items => (
-              <Link key={items.id} to={"/shop"} >
+          <h3 className="font-bold text-[38px]  pb-12">New Arrivals</h3>
+          <div className="-mx-3">
+            <Slider  {...settings}>
+              {myProducts.map(items => (
                 <Product
+                  key={items.id}
                   imgsrc={items.images}
                   imgalt={items.name}
                   badgetxt={`${items.discountPercentage}%`}
                   title={items.title}
                   price={`$ ${items.price}`}
                 />
-              </Link>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
 
           <h3 className="font-bold pt-20 pb-12 text-[38px]">Our Bestsellers</h3>
-          <Slider  {...settings}>
-            {myProductsList.map(items => (
-              <Link key={items.id} to={"/shop"} >
+          <div className="-mx-3">
+            <Slider  {...settings}>
+              {myProductsList.map(items => (
+
                 <Product
+                  key={items.id}
                   imgsrc={items.thumbnail}
                   imgalt={items.name}
                   badgetxt={`${items.discountPercentage}%`}
                   title={items.title}
                   price={`$ ${items.price}`}
                 />
-              </Link>
-            ))}
-          </Slider>
+
+              ))}
+            </Slider>
+          </div>
 
         </Container>
       </section >

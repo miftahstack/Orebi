@@ -90,7 +90,7 @@ const Header = () => {
                 <Img src={logo} alt={"logo"} />
               </Link>
               <ul className="flex gap-x-4">
-                <Link to="/">
+                <Link to={"/"}>
                   <li>
                     <a className="hover:text-blackColor font-[500] text-[#767676]" href="#">
                       Home
@@ -145,12 +145,19 @@ const Header = () => {
                 />
                 <FaSearch className="right-5 top-1/2 -translate-y-1/2 absolute" />
               </div>
-              <div className="flex gap-x-4">
-                <div className="flex">
+              <div className="flex gap-x-10">
+                <div className="flex items-center">
                   <FaUserAlt />
                   <MdOutlineArrowDropDown />
                 </div>
-                <FaCartShopping />
+                <Link to="/cart">
+                  <div className="fixed top-24 right-4 z-30 group duration-200">
+                    <div className="relative p-3 rounded-full group-hover:bg-red-500 bg-gray-100 shadow-lg hover:scale-110 transition-transform cursor-pointer">
+                      <FaCartShopping className="h-[20px] w-[20px] text-red-500 group-hover:text-white" />
+                    </div>
+                  </div>
+
+                </Link>
               </div>
             </Flex>
           </Container>

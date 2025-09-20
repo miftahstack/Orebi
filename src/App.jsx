@@ -1,8 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-
 import RootLayout from "./components/layouts/RootLayout";
-
 
 import Home from "./components/pages/Home";
 import Shop from "./components/pages/Shop";
@@ -12,7 +10,7 @@ import Error from "./components/pages/Error";
 import Login from "./components/pages/Login";
 import SignUp from "./components/pages/SignUp";
 import ProductPage from "./components/pages/ProductPage";
-
+import Cart from "./components/pages/Cart";
 // Main App Component
 
 function App() {
@@ -21,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />}  />
           <Route path="/shop" element={<Shop />} />
           <Route path="/productpage" element={<ProductPage />} />
           <Route path="/about" element={<About />} />

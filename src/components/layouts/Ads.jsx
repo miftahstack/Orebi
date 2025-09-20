@@ -19,10 +19,11 @@ const Ads = () => {
               </div>
             </Link>
             <Link to={"/shop"}>
-            <div className={"flex flex-col gap-y-7.5"}>
-              <Img src={Clock} alt={"Ads Banner"} />
-              <Img src={TableLamp} alt={"Ads Banner"} />
-            </div></Link>
+              <div className={"flex flex-col gap-y-7.5"}>
+                <Img src={Clock} alt={"Ads Banner"} />
+                <Img src={TableLamp} alt={"Ads Banner"} />
+              </div>
+              </Link>
           </Flex>
         </Container>
       </section>
